@@ -1,0 +1,18 @@
+service: modules
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: us-east-2
+
+layers:
+  modules:
+    path: layer
+    name: modules
+    description: aws-sdk and other modules
+    compatibleRuntimes:
+      - nodejs14.x
