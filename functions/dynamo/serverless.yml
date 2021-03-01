@@ -50,7 +50,7 @@ functions:
   hello:
     handler: handler.main
     layers:
-      - arn:aws:lambda:us-east-2:268758445287:layer:modules:1
+      - arn:aws:lambda:us-east-2:268758445287:layer:modules:2
     events:
       - http:
           path: handle

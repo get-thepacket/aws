@@ -1,5 +1,6 @@
 'use strict';
 const AWS = require('aws-sdk');
+const uuid = require('uuid');
 
 module.exports.main = async (event,context) => {
   const client = new AWS.DynamoDB.DocumentClient();
@@ -10,7 +11,7 @@ module.exports.main = async (event,context) => {
     TableName: 'notes',
     Item:{
       userid: "452",
-      noteid: data.noteid,
+      noteid: uuid.v4(),
       content: data.content,
       attachment: data.attachment,
       createdAt: Date.now()

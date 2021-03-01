@@ -1,0 +1,51 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aws-dev-104444-authRole",
+      "UnauthRoleArn": "arn:aws:iam::268758445287:role/amplify-aws-dev-104444-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::268758445287:role/amplify-aws-dev-104444-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-aws-dev-104444-deployment",
+      "UnauthRoleName": "amplify-aws-dev-104444-unauthRole",
+      "StackName": "amplify-aws-dev-104444",
+      "StackId": "arn:aws:cloudformation:ap-south-1:268758445287:stack/amplify-aws-dev-104444/8b7534b0-77f1-11eb-a511-0a8b8710f34e",
+      "AmplifyAppId": "d2rtmzbl2v37ki"
+    },
+    "categories": {
+      "api": {
+        "aws": {
+          "rdsRegion": "ap-south-1",
+          "rdsClusterIdentifier": "arn:aws:rds:ap-south-1:268758445287:cluster:amplify-serverless-cluster",
+          "rdsSecretStoreArn": "arn:aws:secretsmanager:ap-south-1:268758445287:secret:rds-db-credentials/cluster-D6URSWXUL6ZW6EORD2QTJDIL3E/master-9Z7x2w",
+          "rdsDatabaseName": "Marketplace"
+        }
+      },
+      "function": {
+        "customer": {
+          "deploymentBucketName": "amplify-aws-dev-104444-deployment",
+          "s3Key": "amplify-builds/customer-78777761753657436c65-build.zip"
+        },
+        "modules": {
+          "deploymentBucketName": "amplify-aws-dev-104444-deployment",
+          "s3Key": "amplify-builds/modules-build.zip"
+        }
+      }
+    },
+    "nonCFNdata": {
+      "function": {
+        "modules": {
+          "layerVersionMap": {
+            "1": {
+              "permissions": [
+                {
+                  "type": "private"
+                }
+              ],
+              "hash": "pj/r0eKfbMqA/eEauyJNvE7byFhQuTrkAirmjkDKqEY="
+            }
+          }
+        }
+      }
+    }
+  }
+}
